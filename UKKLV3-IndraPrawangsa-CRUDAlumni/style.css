@@ -1,0 +1,129 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    transition: 300ms;
+}
+
+/* Buat body menutupi seluruh tinggi layar */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #00113dcd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-image: url();
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* ubah angka terakhir untuk lebih gelap/terang */
+    z-index: -1;
+    height: 100%;
+    width: auto;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    color: #fafafa;
+}
+
+/* Tabel */
+table {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1100px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#tambahdata {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#tambahdata:hover {
+    padding: 10px;
+    border-radius: 5px;
+
+    background-color: #cdcdcd;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+form input,
+form textarea,
+form button,
+select {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    color: #fafafa;
+    margin-top: 10px;
+}
